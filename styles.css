@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #f0f0f0;
+    --color-text-dark: #0e1111;
+    --color-bg-logo: rgb(14, 17, 17, 0.6);
+    --color-text-light: #f0f0f0;
+    --color-bg-highlight: #ffffff;
+    --color-input-border: #E5E7EB;
+    --color-input-shadow: #0e1111;
+    --color-accent: #0094af;
+    --color-error: #fe1107;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    background-color: var(--color-bg);
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+    flex: 1 0 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--color-text-light);
+    background-image: url('shibuya.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+aside a {
+    color: var(--color-text-light);
+}
+
+aside a:hover {
+    font-weight: 400;
+}
+
+.logo-area {
+    background-color: var(--color-bg-logo);
+    width: 100%;
+    margin-top: 200px;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-area > h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.moon-logo {
+    fill: var(--color-bg-highlight);
+    height: 150px;
+    width: 150px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+}
+
+form li {
+    list-style: none;
+}
+
+form button {
+    font-family: 'Fira Sans';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    background-color: var(--color-accent);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+form button:hover {
+    opacity: 0.6;
+}
+
+label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+input {
+    border: 2px solid var(--color-input-border);
+    border-radius: 5px ;
+}
+
+.input-area > ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.input-area > ul > li {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 0 4px;
+    gap: 4px;
+}
+
+input {
+    padding: 12px 8px;
+}
+
+input:focus {
+    outline-offset: 0;
+    border: 2px solid var(--color-accent);
+}
+
+input:focus-visible {
+    outline: none;
+    outline-offset: 0;
+}
+
+.top-area {
+    padding: 0 40px;
+}
+
+.input-area {
+    padding: 20px 40px;
+    background-color: var(--color-bg-highlight);
+    box-shadow: 0px 10px 10px -10px var(--color-input-shadow);
+}
+
+.submit-area {
+    padding: 20px 40px;
+}
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4px 40px;
+    margin: 0;
+}
+
+.login-area p {
+    margin: 0;
+    padding: 0;
+}
